@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleph Beauty</title>
+
+    <!-- link font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- link font Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!-- Link favicon -->
+    <link rel="shortcut icon" href="https://alephbeauty.com/cdn/shop/files/aleph-favicon_f6c41092-35a7-4ab5-a4c2-d87850a3fe16.jpg?crop=center&height=32&v=1664432741&width=32" type="image/x-icon">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body{
+            background-color: #F6F6F4;
+            font-family: "Montserrat";
+        }
+        .navbar h4{
+            transition: all linear 0.1s;
+        }
+        .sectionOne{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-beauty-519-mcu-1400_a6cc296c-dfb9-49e6-b60d-9751d4ddb246_2560x.jpg?v=1668063737);
+            background-size: cover;
+            background-position: center;
+        }
+        button,
+        .sectionFour img,
+        .productcard,
+        .qualitytext,
+        .footerlinks s{
+            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+        }
+        .sectionTwoimg{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-concealer-foundation-2-078.jpg?v=1660688939&width=2000);
+            background-size: cover;
+            background-position: center;
+        }
+        .card1{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-cheek-lip-tint-gloria-6g-Jar_3200x3724px_21e686b4-bd0e-4c20-a12d-fe4ee5b331b4.png?v=1708369173&width=1600);
+            background-size: cover;
+            background-position: center;
+        }
+        .card1:hover{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/Aleph_2024_Cheek-Lip-Tint-Gloria-campaign_637dfdd3-2ba1-4d74-a055-d9016e66ccc1.jpg?v=1708369173&width=1600);
+            background-size: cover;
+            background-position: center;
+        }
+        .card2{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-cheek-lip-tint-6gJar_Emanate_update_3200x3724px.png?v=1691119781&width=1600);
+            background-size: cover;
+            background-position: center;
+        }
+        .card2:hover{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-cheek-lip-tint-emanate-model_0831.jpg?v=1691119781&width=1600);
+            background-size: cover;
+            background-position: center;
+        }
+        .card3{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-cheek-lip-tint-6g-Jar_Grounded_3200x3724px.png?v=1663891629&width=1600);
+            background-size: cover;
+            background-position: center;
+        }
+        .card3:hover{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/Cheek_LipTintGrounded_1.jpg?v=1662675508&width=1600);
+            background-size: cover;
+            background-position: center;
+        }
+        .productcard:hover .new,.productcard:hover .details{
+            visibility: hidden;
+        }
+        .peoplesayingimg1{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/20220717_100325_large.jpg?v=1663726469);
+            background-size: cover;
+            background-position: center;
+        }
+        .peoplesayingimg2{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/Sakura_M_large.jpg?v=1660704898);
+            background-size: cover;
+            background-position: center;
+        }
+        .peoplesayingimg3{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/Jessica-G-review_large.jpg?v=1660705288);
+            background-size: cover;
+            background-position: center;
+        }
+        .quality1{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/alaria-esculenta-xr.jpg?v=1660707251&width=1200);
+            background-size: cover;
+            background-position: center;
+        }
+        .quality2{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/sunflower-bw.jpg?v=1660707396&width=1200);
+            background-size: cover;
+            background-position: center;
+        }
+        .quality3{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/gal-3.jpg?v=1653633508&width=1200);
+            background-size: cover;
+            background-position: center;
+        }
+        .qualitytext:hover .readmore{
+            display:block;
+        }
+        .sectionEight{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/ex-sus.jpg?v=1661851834);
+            background-size: cover;
+            background-position: center;
+        }
+        .gethelookimg{
+            background-image: url(https://alephbeauty.com/cdn/shop/files/amberly-star-182.jpg?v=1660708208);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed top-0 z-[100]">
+        <div class="navbar h-16 w-screen bg-[#F6F6F4] p-5 flex items-center justify-between">
+            <div class="navleft  flex items-center gap-10 text-black text-[0.80rem] font-medium tracking-widest">
+                <h4 class="hover:border-b-2 hover:border-b-black">SHOP</h4>
+                <h4 class="hover:border-b-2 hover:border-b-black">COLOUR MATCH</h4>
+                <h4 class="hover:border-b-2 hover:border-b-black">ABOUT</h4>
+                <h4 class="hover:border-b-2 hover:border-b-black">SUSTAINABILITY</h4>
+            </div>
+            <div class="logo">
+                <img class="w-20" src="https://alephbeauty.com/cdn/shop/files/aleph-logo.png?v=1662594089" alt="logo">
+            </div>
+            <div class="navright flex items-center gap-10 text-black text-[0.80rem] font-medium tracking-widest">
+                <h4 class="hover:border-b-2 hover:border-b-black">REWARDS</h4>
+                <h4 class="hover:border-b-2 hover:border-b-black">JOURNAL</h4>
+                <h4 class="hover:border-b-2 hover:border-b-black">ACCOUNT</h4>
+                <i class="ri-search-line text-lg font-extralight"></i>
+                <h4 class="hover:border-b-2 hover:border-b-black"><i class="ri-shopping-bag-2-line mr-1 text-base"></i>BAG (0)</h4>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="sectionOne h-[90vh] mt-16 mx-5">
+            <div class="sectionOnetext text-white text-center px-20 py-20">
+                <h1 class="tracking-[-0.30rem] text-7xl font-[PlayfairDisplay] mt-40 mb-5">Clean Beauty. Clear Conscience.</h1>
+                <h3 class="tracking-tight text-base font-medium mb-5">Clean, vegan, multitasking makeup that’s skin loving and sustainable from product to pack.</h3>
+                <a href="#"><button class="px-9 py-4 bg-[#E2DCD2] text-black text-sm font-medium hover:bg-black hover:text-white">SHOP NOW</button></a>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="sectionTwo h-[130vh] mx-5 flex items-center">
+            <div class="sectionTwoimg h-full w-1/2"></div>
+            <div class="sectionTwotext h-full w-1/2 bg-[#EFECE6] px-20 py-24">
+                <h2 class="text-[2.95rem] font-[PLayfairDisplay] tracking-[-0.15rem] mb-2">People, Planet </h2>
+                <h2 class="text-[2.95rem] font-[PLayfairDisplay] tracking-[-0.15rem] mb-7 ml-10">& Animal Friendly.</h2>
+                <h2 class="text-[2.95rem] font-[PLayfairDisplay] tracking-[-0.15rem] italic mb-7 ml-48">Aleph is at one.</h2>
+                <p class="text-sm font-medium mb-7">Consciously formulated with premium clean, vegan ingredients that do an outstanding job in the moment, and proactively nourish the skin over time.</p>
+                <p class="text-sm font-medium mb-7">Aleph is a revolutionary multi-use makeup system to support the wearer and the planet now and in the future.</p>
+                <div class="flex items-center justify-between mb-10 text-sm font-medium">
+                    <div class="flex"><img class="w-4 mr-1" src="checkmark.svg" alt=""><h5>Vegan</h5></div>
+                    <div class="flex"><img class="w-4 mr-1" src="checkmark.svg" alt=""><h5>Cruelty free</h5></div>
+                    <div class="flex"><img class="w-4 mr-1" src="checkmark.svg" alt=""><h5>No GMO</h5></div>
+                    <div class="flex"><img class="w-4 mr-1" src="checkmark.svg" alt=""><h5>No toxins</h5></div>
+                </div>
+                <a href="#"><button class="px-9 py-4 bg-[#E2DCD2] text-black text-sm font-medium tracking-wider hover:bg-black hover:text-white">READ OUR PHILOSPHY</button></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sectionThree h-[150vh] relative z-10 text-center mx-5 my-32 px-60 py-10 flex flex-col justify-center">
+            <h1 class="text-6xl font-[PlayfairDisplay] font-medium tracking-[-0.20rem] mb-8">Find the <span class="italic ">perfect shade</span> for you</h1>
+            <p class="text-sm font-medium mb-7">Born from the knowledge and makeup artistry of founder Emma Peters, <br>Aleph has developed a personalised process to find the most <br>complimentary shades for your unique complexion. Select our specialised <br>quiz, or opt for a personal colour consult.</p>
+            <a href="#"><button class="px-9 py-4 bg-[#E2DCD2] text-black text-sm font-medium tracking-wider hover:bg-black hover:text-white">GET STARTED</button></a>
+            <div>
+                <img class="w-44 absolute z-20 top-0 left-1/3" src="https://alephbeauty.com/cdn/shop/files/3.0_3435fef5-e084-4c79-8989-21cba4476cef.jpg?v=1666336086" alt="">
+                <img class="w-40 absolute z-20 left-0 top-1/3" src="https://alephbeauty.com/cdn/shop/files/chrissy-wears-aleph-concealer-foundation.jpg?v=1660693058" alt="">
+                <img class="w-60 absolute z-20 right-0 top-1/4" src="https://alephbeauty.com/cdn/shop/files/baksho-wears-aleph-concealer-foundation_021523e3-914b-4787-bd65-dfefb5a35ea6.jpg?v=1664949813" alt="">
+                <img class="w-52 absolute z-20 bottom-0 left-1/4" src="https://alephbeauty.com/cdn/shop/files/2.0_d1d761a5-7aee-4f78-bec2-8858d37e253c.jpg?v=1666338225" alt="">
+                <img class="w-36 absolute z-20 bottom-24 right-1/4" src="https://alephbeauty.com/cdn/shop/files/joelle-wears-aleph-concealer-foundation-3.jpg?v=1660691679" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sectionFour h-screen mx-5 mb-24 20 px-60 py-36 text-center text-gray-900 tracking-tighter leading-3 font-[PlayfairDisplay] bg-[#E4E1DC]">
+            <h3 class="text-3xl mb-16"><i class="ri-double-quotes-l font-xs"></i> Aleph Beauty is an exquisite makeup brand that uses <br>natural nourishing ingrediants. It is an extension of your <br>skincare making your skin  fee like a treat while <br>enhancing your natural beauty. The brand's ethos is <br>'people,planet,animal friendly'. <i class="ri-double-quotes-r"></i></h3>
+            <div class="logos flex items-center justify-between">
+                <img class="h-4 opacity-30 hover:opacity-100" src="https://alephbeauty.com/cdn/shop/files/forbes-logo-40236_200x.png?v=1708555653" alt="">
+                <img class="h-4 opacity-30 hover:opacity-100" src="https://alephbeauty.com/cdn/shop/files/remix-logo_200x.png?v=1661296127" alt="">
+                <img class="h-4 opacity-30 hover:opacity-100" src="https://alephbeauty.com/cdn/shop/files/ny-post-logo_200x.png?v=1661296740" alt="">
+                <img class="h-4 opacity-30 hover:opacity-100" src="https://alephbeauty.com/cdn/shop/files/Woman_Logo_black_200x.png?v=1663110205" alt="">
+                <img class="h-4 opacity-30 hover:opacity-100" src="https://alephbeauty.com/cdn/shop/files/fashion-quarterly-logo_200x.png?v=1661296639" alt="">
+                <img class="h-4 opacity-30 hover:opacity-100" src="https://alephbeauty.com/cdn/shop/files/viva-logo_200x.png?v=1661296365" alt="">
+                <img class="h-4 opacity-30 hover:opacity-100" src="https://alephbeauty.com/cdn/shop/files/instyle_200x.png?v=1684473233" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sectionFive">
+            <div class="sectionFiveheading h-24 mx-5 flex items-center justify-between">
+                <div class="left flex items-center gap-5">
+                    <h2 class="text-5xl font-[PlayfairDisplay] tracking-[-0.10rem]">Featured</h2>
+                    <h5 class="text-sm border-b-[1px] border-b-black font-medium">Cheek</h5>
+                    <h5 class="text-sm text-[#a4a19c] font-medium">Face</h5>
+                    <h5 class="text-sm text-[#a4a19c] font-medium">Eye</h5>
+                </div>
+                <div class="right">
+                    <a href="#"><button class="px-9 py-4 bg-[#E2DCD2] text-black text-sm font-medium tracking-wider hover:bg-black hover:text-white">SHOP ALL</button></a>
+                </div>
+            </div>
+            <div class="sectionFiveimg h-screen mx-5 flex items-center jusitfy-between gap-1">
+                <div class="productcard card1 h-full w-1/3 p-7 bg-[#EFECE6]">
+                    <div class="new h-1/2 w-full ">
+                        <h6 class="font-medium">New</h6>
+                    </div>
+                    <div class="details h-1/2 w-full flex items-end justify-between text-base">
+                        <div class="cardleft">
+                            <h6 class="font-medium mb-2">Gloria</h6>
+                            <h6 class="tracking-widest">CHEEK / LIP TINT</h6>
+                        </div>
+                        <div class="cardright">
+                            <h6>Rs. 2,700</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="productcard card2 h-full w-1/3 p-7 bg-[#EFECE6]">
+                    <div class="new h-1/2 w-full ">
+                        <h6 class="font-medium">New</h6>
+                    </div>
+                    <div class="details h-1/2 w-full flex items-end justify-between text-base">
+                        <div class="cardleft">
+                            <h6 class="font-medium mb-2">Emanate</h6>
+                            <h6 class="tracking-widest">CHEEK / LIP TINT</h6>
+                        </div>
+                        <div class="cardright">
+                            <h6>Rs. 2,700</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="productcard card3 h-full w-1/3 p-7 bg-[#EFECE6] ">
+                    <div class="new h-1/2 w-full ">
+                        <h6 class="font-medium">New</h6>
+                    </div>
+                    <div class="details h-1/2 w-full flex items-end justify-between text-base">
+                        <div class="cardleft">
+                            <h6 class="font-medium mb-2">Grounded</h6>
+                            <h6 class="tracking-widest">CHEEK / LIP TINT</h6>
+                        </div>
+                        <div class="cardright">
+                            <h6>Rs. 2,700</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sectionSix h-[110vh] mx-5 mt-24">
+            <h2 class="font-[PlayfairDisplay] tracking-[-0.20rem] text-5xl text-center mb-14">What people are saying</h2>
+            <div class="peoplesaying h-[75vh] w-full flex items-center gap-1">
+                <div class="h-full w-1/3 bg-[#F05C4D] flex relative z-10">
+                    <div class="peoplesayingetext h-full w-1/2 px-5 py-10 text-sm text-white font-medium">
+                        <p class="mb-5"><i class="ri-double-quotes-l font-xs"></i>  My favourite aleph product has to be Ascend. I use it every day as a beautiful lip and cheek tint but I also use it as eyeshadow as it has such a nice warming colour.  <i class="ri-double-quotes-r"></i></p>
+                        <p class="mb-5">Paige</p>
+                        <div class="rating flex gap-1">
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                        </div>
+                    </div>
+                    <div class="peoplesayingimg1 h-full w-1/2 "></div>
+                    <img class="h-72 absolute z-20 top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2" src="https://alephbeauty.com/cdn/shop/files/aleph-cl-asc-mm_large.png?v=1663546460" alt="">
+                </div>
+                <div class="h-full w-1/3 bg-[#5D3529] flex relative z-10">
+                    <div class="peoplesayingetext h-full w-1/2 px-5 py-10 text-sm text-white font-medium">
+                        <p class="mb-5"><i class="ri-double-quotes-l font-xs"></i>  Sunkissed and glowing. I love how light and natural Aleph Beauty feels on my skin.  <i class="ri-double-quotes-r"></i></p>
+                        <p class="mb-5">@Sakuramatches</p>
+                        <div class="rating flex gap-1">
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                        </div>
+                    </div>
+                    <div class="peoplesayingimg2 h-full w-1/2 "></div>
+                    <img class="h-72 absolute z-20 top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2" src="https://alephbeauty.com/cdn/shop/files/6g-Jar_Terra_1600x1862px_1b9aa182-4950-47e2-b08d-ff6771f43890_large.png?v=1660704444" alt="">
+                </div>
+                <div class="h-full w-1/3 bg-[#C79067] flex relative z-10">
+                    <div class="peoplesayingetext h-full w-1/2 px-5 py-10 text-sm text-white font-medium">
+                        <p class="mb-5"><i class="ri-double-quotes-l font-xs"></i>  Love the concealer/foundation! A little goes a long way and you can build up the coverage if you need more.  <i class="ri-double-quotes-r"></i></p>
+                        <p class="mb-5">Jessica g</p>
+                        <div class="rating flex gap-1">
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                        </div>
+                    </div>
+                    <div class="peoplesayingimg3 h-full w-1/2 "></div>
+                    <img class="h-72 absolute z-20 top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2" src="https://alephbeauty.com/cdn/shop/files/6g-Jar_CF-3.0_1600x1862px_large.png?v=1660704956" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sectionSeven h-[110vh] my-24 mx-5 flex gap-1">
+            <div>
+                <h2 class="text-5xl pt-3 pr-32 font-[PlayfairDisplay] tracking-[-0.25rem]"><span class="italic">Ethical</span><br>Ingrediants</h2>
+            </div>
+            <div class="h-full w-1/3 ">
+                <div class="quality1 h-3/5 w-full"></div>
+                <div class="qualitytext h-2/5 w-full py-5">
+                    <h5 class="text-base font-medium mb-2">NUTRIENT RICH</h5>
+                    <p class="text-sm font-medium mb-7 pr-10">We have carefully selected each ingredient, so that not only the products themselves are multi-functional, but the ingredients are too.</p>
+                    <a href="#"><button class="readmore hidden px-8 py-3 bg-[#E2DCD2] text-black text-sm font-medium tracking-widest hover:bg-black hover:text-white">READ MORE</button></a>
+                </div>
+            </div>
+            <div class="h-full w-1/3 ">
+                <div class="quality2 h-3/5 w-full"></div>
+                <div class="qualitytext h-2/5 w-full py-5">
+                    <h5 class="text-base font-medium mb-2">CRUELTY-FREE</h5>
+                    <p class="text-sm font-medium mb-7 pr-10">None of our ingredients or products are tested on animals. We also strictly avoid any animal-derived ingredients. Ensuring true cruelty-free & vegan status.</p>
+                    <a href="#"><button class="readmore hidden px-8 py-3 bg-[#E2DCD2] text-black text-sm font-medium tracking-widest hover:bg-black hover:text-white">READ MORE</button></a>
+                </div>
+            </div>
+            <div class="h-full w-1/3 ">
+                <div class="quality3 h-3/5 w-full"></div>
+                <div class="qualitytext h-2/5 w-full py-5">
+                    <h5 class="text-base font-medium mb-2">NOTHING TO CHANCE</h5>
+                    <p class="text-sm font-medium mb-7 pr-10">Every single ingredient has been chosen with meticulous attention to both functionality and ethics.</p>
+                    <a href="#"><button class="readmore hidden px-8 py-3 bg-[#E2DCD2] text-black text-sm font-medium tracking-widest hover:bg-black hover:text-white">READ MORE</button></a>
+                </dv>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sectionEight h-[120vh] mx-5 my-28 px-14 py-16">
+            <div class="h-3/5 w-3/5 pr-24">
+                <h6 class="text-sm text-gray-500 font-medium tracking-[0.15rem] mb-5">SUSTAINABILITY</h6>
+                <p class="text-4xl text-black font-[PlayfairDisplay] font-medium tracking-[-0.10rem] mb-9">To all of us at Aleph, sustainability isn’t just about doing no harm. It’s about doing more good. That’s why we make informed, conscious, constructive choices across every aspect of our business every day.</p>
+                <a href="#"><button class="px-9 py-4 bg-white text-black text-sm font-medium tracking-wider hover:bg-black hover:text-white">LEARN MORE</button></a>           
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sectionNine h-[150vh] mx-5 mb-36 flex justify-around relative">
+            <div class="h-full w-[30%] flex flex-col justify-end pb-48 text-right">
+                <h5 class="text-sm font-medium mb-2 tracking-wider">Cheek/Lip Tint Sangha</h5>
+                <p class="text-sm tracking-widest">CHEEKS AND LIPS</p>
+            </div>
+            <div class="h-full w-1/3 py-3">
+                <div><h5 class="text-7xl font-[PlayfairDisplay] text-center mb-3 tracking-[-0.25rem]">Get the look</h5></div>
+                <div class="gethelookimg h-[80%] w-full"></div>
+                <div><h5 class="text-4xl text-center font-[PlayfairDisplay] italic  mt-5 tracking-[-0.15rem]">Vintage beauty</h5></div>
+            </div>
+            <div class="h-full w-[30%] flex flex-col justify-center pt-20 ext-left pl-7">
+                <h5 class="text-sm font-medium mb-2 tracking-wider">Radiance Balm Star</h5>
+                <p class="text-sm tracking-widest mb-5">HIGHLIGHT AND EYES</p>
+                <a href="#"><button class="px-9 py-4 bg-[#E2DCD2] text-black text-sm font-medium tracking-wider hover:bg-black hover:text-white">ADD ALL TO CART</button></a>
+            </div>
+            <img class="h-80 absolute top-[15%] right-[20%]" src="https://alephbeauty.com/cdn/shop/files/aleph-rad-sta-mm_600x.png?v=1663546540" alt="">
+            <img class="h-80 absolute top-[40%] left-[20%]" src="https://alephbeauty.com/cdn/shop/files/sangha_800x.png?v=1663815801" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="sectionTen h-[70vh] mx-5 mb-4 overflow-hidden">
+            <h2 class="text-5xl font-[PlayfairDisplay] tracking-[-0.25rem] text-center mb-5">Follow us @aleph.beauty</h2>
+            <div class="h-[80%] w-full flex">
+                <img class="h-full w-1/5" src="https://alephbeauty.com/cdn/shop/files/aleph-IG-008.jpg?v=1663218531" alt="">
+                <img class="h-full w-1/5" src="https://alephbeauty.com/cdn/shop/files/aleph-IG-009.jpg?v=1663218555" alt="">
+                <img class="h-full w-1/5" src="https://alephbeauty.com/cdn/shop/files/aleph-IG-011.jpg?v=1663218576" alt="">
+                <img class="h-full w-1/5" src="https://alephbeauty.com/cdn/shop/files/aleph-collection-117.jpg?v=1660709640" alt="">
+                <img class="h-full w-1/5" src="https://alephbeauty.com/cdn/shop/files/aleph-IG-014.jpg?v=1663218456" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="h-[120vh] mx-5">
+            <div class="h-[90%] w-full flex">
+                <div class="h-full w-1/2 bg-[#EFECE6] px-12 py-24">
+                    <h5 class="text-sm font-medium tracking-[0.15rem] mb-3">NEWSLETTER</h5>
+                    <p class="text-4xl font-[PlayfairDisplay] tracking-[-0.10rem] mb-10">Sign up to our newsletter and receive 10% off your first Aleph order</p>
+                    <div class="h-14 w-full px-0 mb-5 flex items-center justify-between text-sm border-b-[1px] border-b-gray-400">
+                        <h6>Your email</h6>
+                        <a href="#" class="tracking-[0.25rem] hover:text-[#cabf6c]">SUBMIT</a>
+                    </div>
+                    <img class="h-30" src="https://alephbeauty.com/cdn/shop/files/aleph-icons_c1b2df52-1ab4-42c4-a6ab-7e0d2b7cdcea.png?v=1664953074" alt="">
+                </div>
+                <div class="footerlinks h-full w-1/2 bg-[#E4E1DC] px-12 py-24 flex gap-10 text-sm font-medium tracking-widest">
+                    <div class="h-full w-1/3 flex flex-col gap-5">
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">HOME</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">SHOP</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">COLOUR CONSULT</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">ABOUT</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">SUSTAINABILITY</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">JOURNAL</span></a>
+                    </div>
+                    <div class="h-full w-1/3 flex flex-col gap-4">
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">VIDEOS</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">HELP CENTER / FAQS</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">REWARDS</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">FIND A STORE</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">SHIPPING</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">ACCESSIBILITY</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">CONTACT US</span></a>
+                    </div>
+                    <div class="h-full w-1/3 flex flex-col gap-4">
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">INSTAGRAM</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">FACEBOOK</span></a>
+                        <a href="#"><span class="pb-1 hover:border-b-2 hover:border-b-black">TIKTOK</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[10%] w-full flex items-center justify-between text-xs">
+                <div>
+                    <h6>© 2024 ALEPH. ALL RIGHTS RESERVED.</h6>
+                </div>
+                <div class="h-full w-[65%] flex items-center justify-between">
+                    <a href="#">REWARDS T&CS</a>
+                    <a href="#">TERMS OF SERVICE</a>
+                    <a href="#">PRIVACY & COOKIES</a>
+                    <a href="#">ACCESSIBILITY</a>
+                    <a href="#">COVID-19 UPDATE</a>
+                    <a href="#">SITE BY S/A</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
